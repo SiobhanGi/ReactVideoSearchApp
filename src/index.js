@@ -8,7 +8,6 @@ import SearchBar from './components/search_bar';
 import VideoDetail from './components/video_detail';
 import VideoList from './components/video_list';
 
-
 // youtube api key
 const API_KEY = 'AIzaSyB5T4PkhFt0jpVFpU11H7mYFfftHjMsKRg';
 

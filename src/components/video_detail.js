@@ -1,12 +1,12 @@
 import React from 'react';
 
 const VideoDetail = ({ video }) => {
-  // this code will run if no video is passed to props
+  // catch for non loading videos
   if (!video) {
     return <div>Loading...</div>;
   }
 
-  // creating our own video url due to video id's changing.
+  // ID's change, this keeps videos from breaking in future
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;
 
