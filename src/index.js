@@ -1,20 +1,15 @@
-import React from 'react';
+// libraries
+import React from 'react'; // go into node modules and get directory dom.
 import ReactDOM from 'react-dom';
 
-const API_KEY = 'AIzaSyB5T4PkhFt0jpVFpU11H7mYFfftHjMsKRg';
+// component files
+import SearchBar from './components/search_bar';
 
-const App = () => (<div>hi</div>);
+const API_KEY = 'AIzaSyB5T4PkhFt0jpVFpU11H7mYFfftHjMsKRg'; // youtube api key
+
+const App = () => (<div>
+    <SearchBar />
+  </div>);
 
 // Take this component generated HTML and put it in the DOM
 ReactDOM.render(<App />, document.querySelector('.container'));
-
-/*  <App /> = valid jsx
-
-    ReactDOM.render() Requires two arguemnts, the jsx app tag, and a dom selector.
-
-    Which is a reference to a node element on the html page.
-
-    This code is simply saying, reactDOM I want you to render 'app' in the
-    document at the node element that matches 'container'.
-
-    */
